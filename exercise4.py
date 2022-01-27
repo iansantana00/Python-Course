@@ -1,18 +1,32 @@
-# -*- Coding: utf-8 -*-
 
-ms = float(input("Digite uma velocidade em m/s: "))
+matriz = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0,], [0, 0, 0, 0]]
 
-kmh = ms*3.6
+maior_valor = 0
+linha = 0
+coluna = 0
 
-print("Essa velocidade em km/h é: ", kmh)
+for l in range(0, 4):
+    for c in range(0, 4):
+        matriz[l][c] = int(input(f'Digite o valor para [{l}, {c}]: '))
 
-km = float(input("Agora digite uma distância em km: "))
+        if matriz[l][c] > maior_valor:
+            maior_valor = matriz[l][c]
+            linha = l
+            coluna = c
 
-m = km/1.61
+        else:
+            maior_valor == maior_valor 
+            linha == linha
+            coluna == coluna
 
-print("Essa distância em milhas é: ", m)
+print('-'*32)
 
-t = km/kmh
+for l in range(0, 4):
+    for c in range(0, 4):
+        print(f'[{matriz[l][c]:^6}]', end='')
 
-print(f"O tempo (h) para percorrer a distância de {km} km com a velocidade de {kmh} km/h é: ", t)
+    print()
 
+print('-'*32)
+
+print(f'O maior valor foi {maior_valor} e está localizado posição [{linha}, {coluna}]')

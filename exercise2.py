@@ -1,19 +1,16 @@
-# -*- Coding: utf-8 -*-
 
-"""
-Estruturas Lógicas
+matriz = [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]]
 
-Operadores Unitários:
-    - not
-Operadores Binários:
-    - and, or, is 
-"""
+for l in range(0, 5):
+    for c in range(0, 5):
+        if l == c:
+            matriz[l][c] = 1
+        
+        else:
+            matriz[l][c] = 0
 
-ativo = True
-logado = False
-
-if not ativo:
-    print('Você precisa ativar sua conta. Por favor, cheque seu e-mail.')
-else: 
-    print('Bem-vindo usuário!')
-
+for l in range(0, 5):
+    for c in range(0, 5):
+        print(f'{matriz[l][c]:^6}', end='')
+    
+    print()
