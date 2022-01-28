@@ -1,11 +1,13 @@
-# -*- Coding: utf-8 -*-
 
-t1 = float(input("O valor da temperatura é em °c: "))
+def verificador():
+    numero = float(input('Digite o número a ser verificado: '))
+    if numero < 0:
+        return '-1'
+    elif numero == 0:
+        return '0'
+    return '1'
 
-t2 = (t1 * 9/5) + 32
+print(verificador())
 
-print("Essa temperatura em °f seria: ", t2)
 
-t3 = t1 + 273.15
 
-print("Essa temperatura em K seria: ", t3)
