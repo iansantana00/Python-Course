@@ -41,5 +41,11 @@ def soma_impares(numeros):
             total = total + num
     return total # NÃO SE DEVE USAR O return EMBAIXO DO if NESSE CASO
 
-lista = [1, 2, 3, 4, 5, 6, 7]
-print(soma_impares(lista))
+if __name__ == '__main__': # Se o nome do arquivo for igual a main(principal) então roda o arquivo diretamente
+    lista = [1, 2, 3, 4, 5, 6, 7]
+    print(soma_impares(lista))
+
+
+if __name__ == '__main__':
+    tupla = 1, 2, 3, 4, 5, 6, 7
+    print(soma_impares(tupla))
