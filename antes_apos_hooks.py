@@ -9,7 +9,7 @@ hooks -> São os testes em si. Ou seja, a execução dos testes.
 setup() -> É executado antes de cada método de teste. É útil para criarmos
 instâncias de objetos e outros dados;
 
-tearDown() -> É executado ao final de cada método de teste. É útil para 
+tearDown() -> É executado ao final de cada método de teste. É útil para
 excluir dados ou fechar conexões com banco de dados.
 
 

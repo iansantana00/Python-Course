@@ -1,7 +1,7 @@
 from urllib.parse import ParseResultBytes
 
 
-def comer(comida, e_saudavel):
+def comer(comida, eh_saudavel):
     if eh_saudavel:
         final = 'quero manter a forma.'
     else:
