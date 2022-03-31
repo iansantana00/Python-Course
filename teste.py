@@ -1,6 +1,7 @@
-from models.calcular import Calcular
+from models.produto import Produto
 
-calc: Calcular = Calcular(1)
+ps4 = Produto('Playstation 4', 1899.99)
+xbox = Produto('Xbox One', 1999.98)
 
-
-print(calc)
+print(ps4)
+print(xbox)
