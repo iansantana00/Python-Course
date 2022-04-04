@@ -1,42 +1,17 @@
-import unittest
+from models.cliente import Cliente
+from models.conta import Conta
 
-from atividades import comer, dormir, eh_engracada
+felicity: Cliente = Cliente('Felicity Jones', 'felicity@gmail.com',
+'123.456.789-01', '02/09/1987')
 
+angelina: Cliente = Cliente('Angelina Jolie', 'angelina@gmail.com',
+'234,567,890-02', '08/07/1978')
 
-class AtividadesTestes(unittest.TestCase):
-    """Testando o retorno com comida saudável."""
+# print(felicity)
+# print(angelina)
 
-    def test_comer(self):
-        self.assertEqual(
-            comer('quiabo', True),
-            'Estou comendo quiabo porque quero manter a forma.'
-        )
+contaf: Conta = Conta(felicity)
+contaa: Conta = Conta(angelina)
 
-    def test_comer_gostosa(self):
-        """Testando o retorno com comida gostosa."""
-        self.assertEqual(
-            comer(comida='pizza', eh_saudavel=False),
-            'Estou comendo pizza porque a gente só vive uma vez.'
-        )
-
-    def test_dormir_pouco(self):
-        """Testando o retorno dormindo pouco."""
-        self.assertEqual(
-            dormir(4),
-            'Continuo cansado após dormir por 4 horas. :('
-        )
-
-    def test_dormir_muito(self):
-        """Testando o retorno dormindo muito."""
-        self.assertEqual(
-            dormir(10),
-            'Putz! Dormi muito! Estou atrasado para o trabalho!'
-        )
-
-    def test_eh_engracada(self):
-        # self.assertEqual(eh_engracada('Sérgio Malandro'), False)
-        self.assertFalse(eh_engracada('Sérgio Malandro'))
-
-
-if __name__ == '__main__':
-    unittest.main()
+print(contaf)
+print(contaa)
